@@ -134,4 +134,7 @@ a, a:hover{
 }
 .using-appkit-ico {
   padding: 50px 0;
+  & img {
+    margin: 0 15px;
+  }
 }
