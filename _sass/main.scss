@@ -42,13 +42,13 @@ a, a:hover{
 }
 //reset end
 .padding-xs {
-  padding: 10px 0;
+  padding: 10px 0 10px;
 }
 .padding-sm {
-  padding: 15px 0;
+  padding: 25px 0 10px;
 }
 .padding-md {
-  padding: 20px 0;
+  padding: 38px 0 10px;
 }
 .padding-lg {
   padding: 70px 0;
@@ -137,4 +137,13 @@ a, a:hover{
   & img {
     margin: 0 15px;
   }
+}
+.using-appkit-container {
+  text-align: center;
+}
+
+.h5 {
+  font-weight: 600;
+  color: rgb(14, 185, 180);
+  margin-bottom: 0;
 }
