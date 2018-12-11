@@ -1,0 +1,124 @@
+//reset start
+*::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*:-moz-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*::-moz-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*:-ms-input-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+
+body input:required:valid,
+body textarea:required:valid
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #494d55;
+  font-size: 15px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a, a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(247, 247, 247);
+  font-family: inherit;
+}
+//reset end
+.padding-xs {
+  padding: 10px 0;
+}
+.padding-sm {
+  padding: 15px 0;
+}
+.padding-md {
+  padding: 20px 0;
+}
+.padding-ld {
+  padding: 70px 0;
+}
+.header {
+  position: fixed;
+  padding-top: 15px;
+  z-index: 11;
+  height: 100%;
+  & .logo {
+    font-size: 26px;
+    & span {
+      font-weight: bold;
+    }
+    & img {
+      padding-right: 10px;
+    }
+  }
+  & .nav-menu {
+    & a {
+      font-weight: 600;
+    }
+  }
+}
+.intro {
+  position: relative;
+  color: rgb(247, 247, 247);
+  & .main-carousel {
+    position: relative;
+    & .w-100 {
+      object-fit: cover;
+      height: 60vh;
+    }
+    & .carousel-indicators {
+      z-index: 55;
+      & li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+      }
+      & .active {
+        background-color: rgb(14, 185, 180);
+      }
+    }
+  }
+  &-content {
+    position: absolute;
+    z-index: 33;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    & img {
+      max-width: 500px;
+      width: 100%;
+    }
+    & h2 {
+      font-weight: 700;
+    }
+  }
+}
+.btn-main {
+  padding: 10px 30px;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: 800;
+  background-color: rgb(14, 185, 180);
+  border-radius: 5px;
+  border: 0;
+  &:focus {
+    outline: inherit;
+  }
+}
