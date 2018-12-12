@@ -41,23 +41,26 @@ a, a:hover{
   font-family: inherit;
 }
 //reset end
+$primary-color: #f3ffff;
+$bg-c:          rgb(14, 185, 180);
+$author-c:      rgb(0, 69, 73);
+$btn-c:         #494d55;
+
 .padding-xs {
-  padding: 10px 0 10px;
-}
-.padding-sm {
-  padding: 25px 0 10px;
+  padding: 10px 0;
 }
 .padding-md {
-  padding: 38px 0 10px;
+  padding: 20px;
 }
 .padding-lg {
   padding: 70px 0;
 }
+
+//header
 .header {
   position: fixed;
   padding-top: 15px;
   z-index: 11;
-  height: 100%;
   & .logo {
     font-size: 26px;
     & span {
@@ -75,7 +78,7 @@ a, a:hover{
 }
 .intro {
   position: relative;
-  color: rgb(247, 247, 247);
+  color: $primary-color;
   & .main-carousel {
     position: relative;
     & .w-100 {
@@ -90,7 +93,7 @@ a, a:hover{
         border-radius: 50%;
       }
       & .active {
-        background-color: rgb(14, 185, 180);
+        background-color: $bg-c;
       }
     }
   }
@@ -113,24 +116,31 @@ a, a:hover{
 .btn-main {
   padding: 10px 30px;
   font-size: 15px;
-  color: whitesmoke;
+  color: $primary-color;
   font-weight: 800;
-  background-color: rgb(14, 185, 180);
+  background-color: $bg-c;
   border-radius: 5px;
   border: 0;
   &:focus {
     outline: inherit;
   }
 }
+//end header
 .h1 {
   font-weight: 300;
   color: #494d55;
+  text-align: center;
+  &-c {
+    color: $primary-color;
+  }
 }
+//second container
 .title-using-appkit {
   text-align: center;
   max-width: 800px;
   width: 100%;
   color: rgb(145, 145, 145);
+  margin: 0 auto;
 }
 .using-appkit-ico {
   padding: 50px 0;
@@ -138,12 +148,79 @@ a, a:hover{
     margin: 0 15px;
   }
 }
-.using-appkit-container {
-  text-align: center;
-}
-
 .h5 {
   font-weight: 600;
-  color: rgb(14, 185, 180);
+  color: $bg-c;
   margin-bottom: 0;
 }
+.auto-bottom {
+  min-height: 200px;
+  object-fit: scale-down;
+  text-align: center;
+}
+//end second container
+
+//testimonials
+.testimonials {
+  position: relative;
+  background-color: $bg-c;
+  & .bg-img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+
+  }
+  & .container {
+    position: relative;
+  }
+  &-comment {
+    background-color: rgba(37, 149, 151, 0.6);
+    color: $primary-color;
+    border-radius: 4px;
+    position: relative;
+    & img {
+      position: absolute;
+      height: 35px;
+    }
+  }
+}
+.main-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.author-c {
+  color: $author-c;
+  margin-bottom: 0;
+}
+.carey-left {
+  left: -13px;
+}
+.carey-right {
+  right: -13px;
+}
+.margin-left {
+  margin-left: 30px;
+}
+.margin-right {
+  margin-right: 30px;
+}
+.btn-pills {
+  padding-top: 20px;
+  & a {
+    color: $btn-c;
+    padding: 15px;
+  }
+  & .nav-link.active, .nav-pills .show>.nav-link {
+    color: $bg-c;
+    background: transparent;
+    & path {
+      fill: $bg-c;
+    }
+  }
+  & svg {
+    height: 15px;
+    margin-right: 10px;
+  }
+}
+//end testimonials
