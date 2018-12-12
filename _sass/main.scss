@@ -58,9 +58,10 @@ $btn-c:         #494d55;
 
 //header
 .header {
-  position: fixed;
-  padding-top: 15px;
-  z-index: 11;
+  padding: 15px;
+  z-index: 9999999;
+  background-color: #0eb9b4;
+  box-shadow: 0 3px 3px #0eb9b4;
   & .logo {
     font-size: 26px;
     & span {
