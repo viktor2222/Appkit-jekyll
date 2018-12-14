@@ -87,8 +87,8 @@ a, a:hover {
   .intro-content {
     position: absolute;
     z-index: 33;
-    bottom: 0;
     width: 100%;
+    margin-top: 40px;
     font-size: 16px;
     line-height: 26px; }
     .intro-content img {
@@ -125,7 +125,7 @@ a, a:hover {
 .using-appkit-ico {
   padding: 50px 0; }
   .using-appkit-ico img {
-    margin: 0 15px; }
+    margin: 15px; }
 
 .h5 {
   font-weight: 600;
@@ -426,6 +426,14 @@ a, a:hover {
     max-width: 300px;
     width: 100%;
     margin-top: 72px; }
+    #navbar-nav .intro .main-carousel {
+      margin-top: 0; }
 
   .menuFive {
-    display: block; } }
+    display: block; }
+
+  .d-n {
+    display: none; }
+
+  .intro-content {
+    bottom: auto; } }

@@ -114,8 +114,8 @@ $bg-team:       rgb(245, 245, 245);
   &-content {
     position: absolute;
     z-index: 33;
-    bottom: 0;
     width: 100%;
+    margin-top: 40px;
     font-size: 16px;
     line-height: 26px;
     & img {
@@ -159,7 +159,7 @@ $bg-team:       rgb(245, 245, 245);
 .using-appkit-ico {
   padding: 50px 0;
   & img {
-    margin: 0 15px;
+    margin: 15px;
   }
 }
 .h5 {
@@ -501,8 +501,10 @@ $bg-team:       rgb(245, 245, 245);
 
 //media
 @media screen and (max-width: 991px){
-  .intro-content img {
-    max-width: 430px;
+  .intro-content{
+    & img {
+      max-width: 430px;
+    }
   }
 }
 @media screen and (max-width: 768px) {
@@ -515,8 +517,19 @@ $bg-team:       rgb(245, 245, 245);
     max-width: 300px;
     width: 100%;
     margin-top: 72px;
+  .intro {
+    & .main-carousel {
+      margin-top: 0;
+    }
+  }
   }
   .menuFive {
     display: block
+  }
+  .d-n {
+    display: none;
+  }
+  .intro-content{
+    bottom: auto;
   }
 }
