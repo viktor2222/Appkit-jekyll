@@ -56,8 +56,16 @@ a, a:hover {
       font-weight: bold; }
     .header .logo img {
       padding-right: 10px; }
+  .header .nav-menu li {
+    margin: 0 15px; }
   .header .nav-menu a {
     font-weight: 600; }
+  .header .nav-link:hover {
+    color: #004549 !important;
+    border-bottom: 3px solid #004549; }
+  .header .active {
+    color: #004549 !important;
+    border-bottom: 3px solid #004549; }
 
 .intro {
   position: relative;
@@ -84,7 +92,7 @@ a, a:hover {
     font-size: 16px;
     line-height: 26px; }
     .intro-content img {
-      max-width: 500px;
+      max-width: 540px;
       width: 100%; }
     .intro-content h2 {
       font-weight: 700; }
@@ -177,7 +185,7 @@ a, a:hover {
     color: #494d55;
     padding: 15px; }
   .btn-pills .nav-link.active, .btn-pills .nav-pills .show > .nav-link {
-    color: #0eb9b4;
+    color: #0eb9b4 !important;
     background: transparent; }
     .btn-pills .nav-link.active path, .btn-pills .nav-pills .show > .nav-link path {
       fill: #0eb9b4; }
@@ -190,11 +198,14 @@ a, a:hover {
   .team-section p {
     text-align: center; }
   .team-section .team-container {
-    padding-top: 50px; }
+    padding-top: 50px;
+    margin-left: 0;
+    margin-right: 0; }
     .team-section .team-container-bg {
       background-color: white;
       border-radius: 8px;
-      padding: 30px; }
+      padding: 30px;
+      margin-bottom: 20px; }
     .team-section .team-container .team-img {
       max-height: 120px;
       height: auto; }
@@ -206,9 +217,11 @@ a, a:hover {
 .pricing-container-bg {
   border-radius: 8px;
   padding: 30px;
-  margin: 0 30px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 40px; }
+  margin-top: 40px;
+  max-width: 300px;
+  width: 100%; }
 
 .pricing-container-bg-green {
   background-color: #6dbf83; }
@@ -248,6 +261,9 @@ a, a:hover {
   .author-c:hover {
     color: #004549; }
 
+.title-pricing-p {
+  text-align: center; }
+
 .section-contact {
   background-color: #4a4e56;
   position: relative; }
@@ -275,9 +291,6 @@ a, a:hover {
     color: #0eb9b4; }
   .footer p {
     margin-bottom: 0; }
-
-.active {
-  color: #004549 !important; }
 
 .overlay,
 .popup {
@@ -327,3 +340,85 @@ a, a:hover {
 
 .close-popup:after {
   transform: rotate(45deg); }
+
+.affix {
+  top: 0;
+  width: 100%;
+  z-index: 9999 !important; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.affix ~ .container {
+  position: relative;
+  top: 50px; }
+
+.menu-a:hover {
+  color: #004549; }
+
+.features-container img {
+  max-width: 600px;
+  width: 100%; }
+.features-container .btn-pills {
+  padding: 0; }
+
+.menuFive {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 999999;
+  display: none; }
+
+.menuFive span {
+  background-color: #222;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms; }
+
+.menuFive span:nth-child(1) {
+  top: 0px;
+  left: 0px; }
+
+.menuFive span:nth-child(2) {
+  top: 13px;
+  left: 0px; }
+
+.menuFive span:nth-child(3) {
+  bottom: 0px;
+  left: 0px; }
+
+.menuFive:not(.clickMenuFive):hover span:nth-child(1) {
+  transform: rotate(-3deg) scaleY(1.1); }
+
+.menuFive:not(.clickMenuFive):hover span:nth-child(2) {
+  transform: rotate(3deg) scaleY(1.1); }
+
+.menuFive:not(.clickMenuFive):hover span:nth-child(3) {
+  transform: rotate(-4deg) scaleY(1.1); }
+
+.clickMenuFive span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px; }
+
+.clickMenuFive span:nth-child(2) {
+  transform: scale(0.1); }
+
+.clickMenuFive span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px; }
+
+@media screen and (max-width: 991px) {
+  .intro-content img {
+    max-width: 430px; } }
+@media screen and (max-width: 650px) {
+  #navbar-nav {
+    display: none; }
+
+  .menuFive {
+    display: block; } }

@@ -5,28 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Appkit</title>
-  <link rel="shortcut icon" href="/assets/images/app-store-ios-brands.ico">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/images/app-store-ios-brands.ico">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" data-spy="affix">
   <header class="header fixed-top">
   <div class="container">
     <div class="row d-flex justify-content-between">
       <div class="col-md-3 d-flex align-items-center">
-        <a class="logo" href="/"><img src="/assets/images/logo-icon.svg" alt="logo"><span>APP</span>KIT</a>
+        <a class="logo" href="/"><img src="assets/images/logo-icon.svg" alt="logo"><span>APP</span>KIT</a>
       </div>
-      <div class="col-md-9 d-flex justify-content-end">
-        <nav id="nav-menu" class="nav nav-menu">
-          <a class="nav-link active" href="#about">About</a>
-          <a class="nav-link" href="#testimonials">Testimonials</a>
-          <a class="nav-link" href="#features">Features</a>
-          <a class="nav-link" href="#team">Team</a>
-          <a class="nav-link" href="#pricing">Pricing</a>
-          <a class="nav-link" href="#contact">Contact</a>
+      <div class="col-md-9">
+        <div id="menuFive" class="menuFive">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="container d-flex justify-content-end navbar navbar-expand-sm fixed-top">
+          <ul id="navbar-nav" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </div>
@@ -44,13 +63,13 @@
   <div class="intro-content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 padding-md">
           <h2 >Angular Lover?</h2>
           <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima iure vel temporibus aperiam eius omnis, ex cupiditate dicta impedit sunt mollitia alias harum id aut natus necessitatibus! Modi, cum, explicabo!</p>
           <button class="btn-main">Find out more</button>
         </div>
         <div class="col-lg-6">
-            <img src="/assets/images/imac.png" alt="Imac">
+            <img src="assets/images/imac.png" alt="Imac">
         </div>
       </div>
     </div>
@@ -63,13 +82,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item">
-      <img class="d-block w-100" src="/assets/images/hero-1.jpg" alt="First slide">
+      <img class="d-block w-100" src="assets/images/hero-1.jpg" alt="First slide">
       </div>
       <div class="carousel-item active">
-        <img class="d-block w-100 active" src="/assets/images/hero-2.jpg" alt="Second slide">
+        <img class="d-block w-100 active" src="assets/images/hero-2.jpg" alt="Second slide">
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="/assets/images/hero-3.jpg" alt="Third slide">
+        <img class="d-block w-100" src="assets/images/hero-3.jpg" alt="Third slide">
       </div>
     </div>
   </div>
@@ -81,31 +100,31 @@
       <h1 class="h1">Why Use AppKit</h1>
       <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <div class="using-appkit-ico">
-      <img src="/assets/images/logo-bootstrap.svg" alt="ico Bootstrap">
-      <img src="/assets/images/logo-angular.svg" alt="ico Angular">
-      <img src="/assets/images/logo-html5.svg" alt="ico html5">
-      <img src="/assets/images/logo-css3.svg" alt="ico css3">
-      <img src="/assets/images/logo-less.svg" alt="ico less">
-      <img src="/assets/images/logo-jquery.svg" alt="ico jquery">
+    <div class="using-appkit-ico d-flex justify-content-center flex-wrap">
+      <img src="assets/images/logo-bootstrap.svg" alt="ico Bootstrap">
+      <img src="assets/images/logo-angular.svg" alt="ico Angular">
+      <img src="assets/images/logo-html5.svg" alt="ico html5">
+      <img src="assets/images/logo-css3.svg" alt="ico css3">
+      <img src="assets/images/logo-less.svg" alt="ico less">
+      <img src="assets/images/logo-jquery.svg" alt="ico jquery">
     </div>
     <div class="row padding-xs">
       <div class="col-md-4 d-flex justify-column-center align-items-center flex-column">
-        <img class="auto-bottom" src="/assets/images/figure-1.png" alt="">
+        <img class="auto-bottom" src="assets/images/figure-1.png" alt="">
         <div class="auto-bottom d-flex flex-column">
           <h5 class="h5">UX-Centered Design</h5>
           <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
       <div class="col-md-4 d-flex justify-column-center align-items-center flex-column">
-        <img class="auto-bottom" src="/assets/images/figure-2.png" alt="">
+        <img class="auto-bottom" src="assets/images/figure-2.png" alt="">
         <div class="auto-bottom d-flex flex-column">
           <h5 class="h5">Supercharge App Development</h5>
           <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
         </div>
       </div>
       <div class="col-md-4 d-flex justify-column-center align-items-center flex-column">
-        <img class="auto-bottom" src="/assets/images/figure-3.png" alt="">
+        <img class="auto-bottom" src="assets/images/figure-3.png" alt="">
         <div class="auto-bottom d-flex flex-column">
           <h5 class="h5">Mobile First</h5>
           <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -116,36 +135,36 @@
 </section>
 
 <section id="testimonials" class="testimonials padding-lg">
-  <img class="bg-img" src="/assets/images/map.png" alt="map">
+  <img class="bg-img" src="assets/images/map.png" alt="map">
   <div class="container">
     <h1 class="h1 h1-c">Many Happy Customers</h1>
     <div class="main-container">
       <div class="d-flex align-items-start padding-lg">
-        <img src="/assets/images/profile-1.png" alt="profile">
+        <img src="assets/images/profile-1.png" alt="profile">
         <div class="testimonials-comment margin-left padding-md">
-          <img class="carey-left" src="/assets/images/caret-left-solid.svg" alt="caret-left">
+          <img class="carey-left" src="assets/images/caret-left-solid.svg" alt="caret-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p class="author-c">@JohnK, San Francisco</p>
         </div>
       </div>
       <div class="d-flex align-items-start flex-row-reverse">
-        <img src="/assets/images/profile-2.png" alt="profile">
+        <img src="assets/images/profile-2.png" alt="profile">
         <div class="testimonials-comment margin-right padding-md">
-          <img class="carey-right" src="/assets/images/caret-right-solid.svg" alt="caret-right">
+          <img class="carey-right" src="assets/images/caret-right-solid.svg" alt="caret-right">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="author-c">@JohnK, San Francisco</p>
         </div>
       </div>
       <div class="d-flex align-items-start padding-lg">
-        <img src="/assets/images/profile-3.png" alt="profile">
+        <img src="assets/images/profile-3.png" alt="profile">
         <div class="testimonials-comment margin-left padding-md">
-          <img class="carey-left" src="/assets/images/caret-left-solid.svg" alt="caret-left">
+          <img class="carey-left" src="assets/images/caret-left-solid.svg" alt="caret-left">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
           <p class="author-c">@JohnK, San Francisco</p>
         </div>
       </div>
       <div class="d-flex align-items-start flex-row-reverse">
-        <img src="/assets/images/profile-4.png" alt="profile">
+        <img src="assets/images/profile-4.png" alt="profile">
         <div class="testimonials-comment margin-right padding-md">
           <img class="carey-right" src="/assets/images/caret-right-solid.svg" alt="caret-right">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -162,16 +181,16 @@
       <h1 class="h1">Discover Features</h1>
       <p class="padding-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
     </div>
-    <div class="row d-flex">
+    <div class="row d-flex features-container">
       <div class="col-md-8 tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-app" role="tabpanel" aria-labelledby="v-pills-app-tab"><img src="/assets/images/feature-1.png" alt="feature-1"></div>
-        <div class="tab-pane fade" id="v-pills-components" role="tabpanel" aria-labelledby="v-pills-components-tab"><img src="/assets/images/feature-2.png" alt="feature-2"></div>
-        <div class="tab-pane fade" id="v-pills-libraries" role="tabpanel" aria-labelledby="v-pills-libraries-tab"><img src="/assets/images/feature-3.png" alt="feature-3"></div>
-        <div class="tab-pane fade" id="v-pills-angular" role="tabpanel" aria-labelledby="v-pills-angular-tab"><img src="/assets/images/feature-4.png" alt="feature-4"></div>
-        <div class="tab-pane fade" id="v-pills-bootstrap" role="tabpanel" aria-labelledby="v-pills-bootstrap-tab"><img src="/assets/images/feature-5.png" alt="feature-5"></div>
-        <div class="tab-pane fade" id="v-pills-responsive" role="tabpanel" aria-labelledby="v-pills-responsive-tab"><img src="/assets/images/feature-6.png" alt="feature-6"></div>
-        <div class="tab-pane fade" id="v-pills-valid" role="tabpanel" aria-labelledby="v-pills-valid-tab"><img src="/assets/images/feature-7.png" alt="feature-7"></div>
-        <div class="tab-pane fade" id="v-pills-updates" role="tabpanel" aria-labelledby="v-pills-updates-tab"><img src="/assets/images/feature-8.png" alt="feature-8"></div>
+        <div class="tab-pane fade show active" id="v-pills-app" role="tabpanel" aria-labelledby="v-pills-app-tab"><img src="assets/images/feature-1.png" alt="feature-1"></div>
+        <div class="tab-pane fade" id="v-pills-components" role="tabpanel" aria-labelledby="v-pills-components-tab"><img src="assets/images/feature-2.png" alt="feature-2"></div>
+        <div class="tab-pane fade" id="v-pills-libraries" role="tabpanel" aria-labelledby="v-pills-libraries-tab"><img src="assets/images/feature-3.png" alt="feature-3"></div>
+        <div class="tab-pane fade" id="v-pills-angular" role="tabpanel" aria-labelledby="v-pills-angular-tab"><img src="assets/images/feature-4.png" alt="feature-4"></div>
+        <div class="tab-pane fade" id="v-pills-bootstrap" role="tabpanel" aria-labelledby="v-pills-bootstrap-tab"><img src="assets/images/feature-5.png" alt="feature-5"></div>
+        <div class="tab-pane fade" id="v-pills-responsive" role="tabpanel" aria-labelledby="v-pills-responsive-tab"><img src="assets/images/feature-6.png" alt="feature-6"></div>
+        <div class="tab-pane fade" id="v-pills-valid" role="tabpanel" aria-labelledby="v-pills-valid-tab"><img src="assets/images/feature-7.png" alt="feature-7"></div>
+        <div class="tab-pane fade" id="v-pills-updates" role="tabpanel" aria-labelledby="v-pills-updates-tab"><img src="assets/images/feature-8.png" alt="feature-8"></div>
       </div>
       <div class="col-md-4 nav flex-column nav-pills btn-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="nav-link active" id="v-pills-app-tab" data-toggle="pill" href="#v-pills-app" role="tab" aria-controls="v-pills-app" aria-selected="true"><svg aria-hidden="true" data-prefix="fas" data-icon="chart-bar" class="svg-inline--fa fa-chart-bar fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#494d55" d="M332.8 320h38.4c6.4 0 12.8-6.4 12.8-12.8V172.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V76.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-288 0h38.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zM496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></svg>20+ Use Case-based App Pages</a>
@@ -198,7 +217,7 @@
     <div class="row team-container">
       <div class="col-md-6">
         <div class="team-container-bg d-flex flex-column align-items-center">
-          <img class="team-img" src="/assets/images/team-1.png" alt="team-1">
+          <img class="team-img" src="assets/images/team-1.png" alt="team-1">
           <h5 class="h5 padding-xs">Xiaoying Riley</h5>
           <h5>Full-Stack Designer</h5>
           <div class="team-social-ico padding-xs d-flex">
@@ -213,7 +232,7 @@
       </div>
       <div class="col-md-6">
         <div class="team-container-bg d-flex flex-column align-items-center">
-          <img class="team-img" src="/assets/images/team-2.png" alt="team-1">
+          <img class="team-img" src="assets/images/team-2.png" alt="team-1">
           <h5 class="h5 padding-xs">Tomasz Najdek</h5>
           <h5>Full-Stack Developer</h5>
           <div class="team-social-ico padding-xs d-flex">
@@ -234,7 +253,7 @@
 <section id="pricing" class="padding-lg">
   <div class="container d-flex align-items-center justify-content-center flex-column">
     <h1 class="h1">Pricing</h1>
-    <p class="padding-xs">AppKit's future updates are 100% FREE for existing customers</p>
+    <p class="title-pricing-p padding-xs">AppKit's future updates are 100% FREE for existing customers</p>
     <div class="row">
       <div class="col-md-4">
         <div class="pricing-container-bg pricing-container-bg-green d-flex flex-column justify-content-center">
@@ -268,7 +287,7 @@
 </section>
 
 <section id="contact" class="section-contact padding-lg">
-  <img class="bg-img" src="/assets/images/map.png" alt="map">
+  <img class="bg-img" src="assets/images/map.png" alt="map">
   <div class="main-container">
     <div class="title-using-appkit d-flex align-items-center flex-column">
       <h1 class="h1 primary-c">Contact Us</h1>
@@ -283,13 +302,13 @@
   <p>Designed with <svg aria-hidden="true" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="rgb(229, 71, 127)" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg><a href="#">Xiaoying Riley</a> for developers</p>
 </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<script src="/assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>

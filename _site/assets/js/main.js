@@ -1,7 +1,3 @@
-$(".nav .nav-link").on("click", function(){
-   $(".nav").find(".active").removeClass("active");
-   $(this).addClass("active");
-});
 $(window).on('load', function() {
   setTimeout(function() {
       if ($('.js-overlay-campaign').hasClass('disabled')) {
@@ -19,4 +15,30 @@ $(document).mouseup(function(e) {
     if (e.target != popup[0] && popup.has(e.target).length === 0) {
         $('.js-overlay-campaign').fadeOut()
     }
-})
+});
+
+$(".navbar ul li a[href^='#']").on('click', function(e) {
+
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 1000, function(){
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});
+
+
+//burger
+$( "#menuFive" ).click(function() {
+  $("#navbar-nav").slideToggle();
+});

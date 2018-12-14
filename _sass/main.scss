@@ -73,9 +73,20 @@ $bg-team:       rgb(245, 245, 245);
     }
   }
   & .nav-menu {
+    & li {
+      margin: 0 15px;
+    }
     & a {
       font-weight: 600;
     }
+  }
+  & .nav-link:hover {
+    color: $author-c !important;
+    border-bottom: 3px solid $author-c
+  }
+  .active {
+    color: $author-c !important;
+    border-bottom: 3px solid $author-c
   }
 }
 .intro {
@@ -108,7 +119,7 @@ $bg-team:       rgb(245, 245, 245);
     font-size: 16px;
     line-height: 26px;
     & img {
-      max-width: 500px;
+      max-width: 540px;
       width: 100%;
     }
     & h2 {
@@ -217,7 +228,7 @@ $bg-team:       rgb(245, 245, 245);
     padding: 15px;
   }
   & .nav-link.active, .nav-pills .show>.nav-link {
-    color: $bg-c;
+    color: $bg-c !important;
     background: transparent;
     & path {
       fill: $bg-c;
@@ -238,10 +249,13 @@ $bg-team:       rgb(245, 245, 245);
   }
   & .team-container {
     padding-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
     &-bg {
       background-color: white;
       border-radius: 8px;
       padding: 30px;
+      margin-bottom: 20px;
     }
     & .team-img {
       max-height: 120px;
@@ -256,12 +270,16 @@ $bg-team:       rgb(245, 245, 245);
     }
   }
 }
+//end team-section
+//pricing-container
 .pricing-container-bg {
   border-radius: 8px;
   padding: 30px;
-  margin: 0 30px;
+  margin: 0 auto;
   text-align: center;
   margin-top: 40px;
+  max-width: 300px;
+  width: 100%;
 }
 .pricing-container-bg-green {
   background-color: rgb(109, 191, 131);
@@ -304,7 +322,10 @@ $bg-team:       rgb(245, 245, 245);
     color: $author-c;
   }
 }
-//end team-section
+.title-pricing-p {
+  text-align: center;
+}
+//end prising-container
 
 //section-contact
 .section-contact {
@@ -343,10 +364,6 @@ $bg-team:       rgb(245, 245, 245);
   }
 }
 //end footer
-
-.active {
-  color: $author-c !important;
-}
 .overlay,
 .popup {
   position: fixed;
@@ -400,4 +417,99 @@ $bg-team:       rgb(245, 245, 245);
 
 .close-popup:after {
     transform: rotate(45deg)
+}
+// menu
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+  }
+  .navbar {
+    margin-bottom: 0px;
+  }
+
+  .affix ~ .container {
+    position: relative;
+    top: 50px;
+  }
+.menu-a:hover {
+  color: rgb(0, 69, 73);
+}
+.features-container {
+  & img {
+    max-width: 600px;
+    width: 100%;
+  }
+  & .btn-pills {
+    padding: 0;
+  }
+}
+//menu burger
+.menuFive{
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  z-index: 999999;
+  display: none;
+}
+.menuFive span{
+  background-color:#222;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 500ms
+}
+.menuFive span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.menuFive span:nth-child(2){
+  top:13px;
+  left: 0px;
+}
+.menuFive span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+.menuFive:not(.clickMenuFive):hover span:nth-child(1){
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.menuFive:not(.clickMenuFive):hover span:nth-child(2){
+  transform: rotate(3deg) scaleY(1.1);
+}
+.menuFive:not(.clickMenuFive):hover span:nth-child(3){
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.clickMenuFive span:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+
+}
+.clickMenuFive span:nth-child(2){
+  transform: scale(.1);
+
+}
+.clickMenuFive span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+//media
+@media screen and (max-width: 991px){
+  .intro-content img {
+    max-width: 430px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #navbar-nav {
+    display: none;
+  }
+  .menuFive {
+    display: block
+  }
 }
