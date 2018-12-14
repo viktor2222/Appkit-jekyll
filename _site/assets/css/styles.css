@@ -416,9 +416,16 @@ a, a:hover {
 @media screen and (max-width: 991px) {
   .intro-content img {
     max-width: 430px; } }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
   #navbar-nav {
-    display: none; }
+    display: none;
+    margin-top: 30px;
+    background-color: #0eb9b4;
+    box-shadow: 0 3px 3px #004549;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 72px; }
 
   .menuFive {
     display: block; } }
