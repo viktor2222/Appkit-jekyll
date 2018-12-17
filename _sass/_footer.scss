@@ -1,0 +1,19 @@
+.footer {
+  background-color: rgb(41, 45, 47);
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  & svg {
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & a {
+    margin-left: 20px;
+    color: $bg-c;
+  }
+  & p {
+    margin-bottom: 0;
+  }
+}

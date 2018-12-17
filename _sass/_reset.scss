@@ -1,0 +1,41 @@
+*::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*:-moz-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*::-moz-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+*:-ms-input-placeholder{
+  color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+
+body input:required:valid,
+body textarea:required:valid
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #494d55;
+  font-size: 15px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a, a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(247, 247, 247);
+  font-family: inherit;
+}

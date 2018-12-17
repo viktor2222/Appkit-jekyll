@@ -1,0 +1,34 @@
+//media
+@media screen and (max-width: 991px){
+  .intro-content{
+    & img {
+      max-width: 430px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  #navbar-nav {
+    display: none;
+    margin-top: 30px;
+    background-color: $bg-c;
+    box-shadow: 0 3px 3px $author-c;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin-top: 72px;
+  .intro {
+    & .main-carousel {
+      margin-top: 0;
+    }
+  }
+  }
+  .menuFive {
+    display: block
+  }
+  .d-n {
+    display: none;
+  }
+  .intro-content{
+    bottom: auto;
+  }
+}
